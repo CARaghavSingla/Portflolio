@@ -1,0 +1,785 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <link rel="stylesheet" href="https://unicons.iconscout.com/release/v4.0.0/css/line.css">
+    <link rel="stylesheet" href="./packages/css/swiper-bundle.min.css">
+    <link rel="stylesheet" href="./packages/css/styles.css">
+
+    <title>Divy Jain</title>
+    <link rel="shortcut icon" type="image/jpg" href="./packages/images/logo.png"/>
+</head>
+
+<body>
+    <!--==================== HEADER ====================-->
+    <header class="header" id="header">
+        <nav class="nav container">
+            <a href="#" class="nav__logo">CA Divy Jain</a>
+            <div class="nav__menu" id="nav-menu">
+                <ul class="nav__list grid">
+                    <li class="nav__item">
+                        <a href="#home" class="nav__link">
+                            <i class="uil uil-estate nav__icon"></i>Home
+                        </a>
+                    </li>
+                    <li class="nav__item">
+                        <a href="#about" class="nav__link">
+                            <i class="uil uil-user nav__icon"></i>About
+                        </a>
+                    </li>
+                    <li class="nav__item">
+                        <a href="#skills" class="nav__link">
+                            <i class="uil uil-file-alt nav__icon"></i>Skills
+                        </a>
+                    </li>
+                    <li class="nav__item">
+                        <a href="#qualification" class="nav__link">
+                            <i class="uil uil-briefcase-alt nav__icon"></i>Experience
+                        </a>
+                    </li>
+                    <li class="nav__item">
+                        <a href="#services" class="nav__link">
+                            <i class="uil uil-setting nav__icon"></i>Services
+                        </a>
+                    </li>
+                    <li class="nav__item">
+                        <a href="#contact" class="nav__link">
+                            <i class="uil uil-message nav__icon"></i>Contact
+                        </a>
+                    </li>
+                </ul>
+                <i class="uil uil-times nav__close" id="nav-close"></i>
+            </div>
+            <div class="nav__btns">
+               
+                <i class="uil uil-moon change-theme" id="theme-button"></i>
+
+                <div class="nav__toggle" id="nav-toggle">
+                    <i class="uil uil-apps"></i>
+                </div>
+            </div>
+        </nav>
+    </header>
+
+    <!--==================== MAIN ====================-->
+    <main class="main">
+        <!--==================== HOME ====================-->
+        <section class="home section" id="home">
+            <div class="home__container container grid">
+                <div class="home__content grid">
+                    <div class="home__social">
+                        <a href="https://www.linkedin.com/in/ca-divy-jain-a97922132/" target="_blank"
+                            class="home__social-icon">
+                            <i class="uil uil-linkedin"></i>
+                        </a>
+                        <a href="https://www.instagram.com/ca_divyjain/" target="_blank" class="home__social-icon">
+                            <i class="uil uil-instagram"></i>
+                        </a>
+                    </div>
+
+                    <div class="home__img">
+                        <svg class="home__blob" viewBox="0 0 200 187" xmlns="http://www.w3.org/2000/svg"
+                            xmlns:xlink="http://www.w3.org/1999/xlink">
+                            <mask id="mask0" mask-type="alpha">
+                                <path d="M190.312 36.4879C206.582 62.1187 201.309 102.826 182.328 134.186C163.346 165.547 
+                                    130.807 187.559 100.226 186.353C69.6454 185.297 41.0228 161.023 21.7403 129.362C2.45775 
+                                    97.8511 -7.48481 59.1033 6.67581 34.5279C20.9871 10.1032 59.7028 -0.149132 97.9666 
+                                    0.00163737C136.23 0.303176 174.193 10.857 190.312 36.4879Z" />
+                            </mask>
+                            <g mask="url(#mask0)">
+                                <path d="M190.312 36.4879C206.582 62.1187 201.309 102.826 182.328 134.186C163.346 
+                                    165.547 130.807 187.559 100.226 186.353C69.6454 185.297 41.0228 161.023 21.7403 
+                                    129.362C2.45775 97.8511 -7.48481 59.1033 6.67581 34.5279C20.9871 10.1032 59.7028 
+                                    -0.149132 97.9666 0.00163737C136.23 0.303176 174.193 10.857 190.312 36.4879Z" />
+                                <image class="home__blob-img" xlink:href="packages/images/header.jpg" />
+                            </g>
+                        </svg>
+                    </div>
+
+                    <div class="home__data">
+                        <h3 class="home__intro">Hi, my name is</h3>
+                        <h1 class="home__title">CA Divy Jain</h1>
+                        <h3  class="home__subtitle">
+                            <span id="introduction"></span>
+                            <span class="input__cursor"></span>
+                        </h3>
+                        <p class="home__description">
+                            I'm a passionate Chartered Accountant with experience in handling Accounting, Auditing, 
+                            and Taxation matters.
+                        </p>
+                        <a href="#contact" class="button button--flex">
+                            Contact Me<i class="uil uil-message button__icon"></i>
+                        </a>
+                    </div>
+                </div>
+
+                <div class="home__scroll">
+                    <a href="#about" class="home__scroll-button button--flex">
+                        <i class="uil uil-mouse-alt home__scroll-mouse"></i>
+                        <span class="home__scroll-name">Scroll Down</span>
+                        <i class="uil uil-arrow-down home__scroll-arrow"></i>
+                    </a>
+                </div>
+            </div>
+        </section>
+
+        <!--==================== ABOUT ====================-->
+        <section class="about section" id="about">
+            <h2 class="section__title">About Me</h2>
+            <span class="section__subtitle">Introduction</span>
+
+            <div class="about__container container grid">
+                <img src="packages/images/divy-4.jpg" alt="My Beautiful Pic" class="about__img">
+                <div class="about__data">
+                    <p class="about__description">
+                        A tech-savvy Chartered Accountant with the mindset of delivering excellent Accounting, Auditing, and Taxation (Direct and Indirect) 
+                        services to clients.<br><br>
+                        Always up for solving client problems, learning new things and playing with numbers!
+                    </p>
+                    <div class="about__info">
+                        <div>
+                            <span class="about__info-title">4+</span>
+                            <span class="about__info-name">Years <br> Experience</span>
+                        </div>
+                        <div>
+                            <span class="about__info-title">&#8377 30 Lakhs+</span>
+                            <span class="about__info-name">Client <br> Cost Savings</span>
+                        </div>
+                        <div>
+                            <span class="about__info-title">02+</span>
+                            <span class="about__info-name">Organizations <br> Exposure</span>
+                        </div>
+                    </div>
+
+                    <div class="about__buttons">
+                        <a download="" href="./packages/pdf/Divy Jain_Resume.pdf" class="button button--flex">
+                            Download Resume<i class="uil uil-download-alt button__icon"></i>
+                        </a>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!--==================== SKILLS ====================-->
+        <section class="skills section" id="skills">
+            <h2 class="section__title">Skills</h2>
+            <span class="section__subtitle">Technical Skillset</span>
+
+            <div class="skills__container container grid">
+                <div>
+                    <div class="skills__content skills__open">
+                        <div class="skills__header">
+                            <i class="uil uil-bill skills__icon"></i>
+                            <div>
+                                <h1 class="skills__title">Direct Taxation</h1>
+                                <span class="skills__subtitle">More than 4 years</span>
+                            </div>
+
+                            <i class="uil uil-angle-down skills__arrow"></i>
+                        </div>
+                        <div class="skills__list grid">
+                            <div class="skills__data">
+                                <div class="skills__titles">
+                                    <h3 class="skills__name">Search, Scrutiny and Appeal Proceedings</h3>
+                                    <span class="skills__number">80%</span>
+                                </div>
+                                <div class="skills__bar">
+                                    <span class="skills__percentage skills__80"></span>
+                                </div>
+                            </div>
+                            <div class="skills__data">
+                                <div class="skills__titles">
+                                    <h3 class="skills__name">Faceless E Assessment Proceedings</h3>
+                                    <span class="skills__number">80%</span>
+                                </div>
+                                <div class="skills__bar">
+                                    <span class="skills__percentage skills__80"></span>
+                                </div>
+                            </div>
+                            <div class="skills__data">
+                                <div class="skills__titles">
+                                    <h3 class="skills__name">Income Tax Returns</h3>
+                                    <span class="skills__number">70%</span>
+                                </div>
+                                <div class="skills__bar">
+                                    <span class="skills__percentage skills__70"></span>
+                                </div>
+                            </div>
+                            <div class="skills__data">
+                                <div class="skills__titles">
+                                    <h3 class="skills__name">Intimations</h3>
+                                    <span class="skills__number">70%</span>
+                                </div>
+                                <div class="skills__bar">
+                                    <span class="skills__percentage skills__70"></span>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    
+                    <div class="skills__content skills__close">
+                        <div class="skills__header">
+                            <i class="uil uil-file-lock-alt skills__icon"></i>
+                            <div>
+                                <h1 class="skills__title">Audit Management</h1>
+                                <span class="skills__subtitle">More than 4 years</span>
+                            </div>
+
+                            <i class="uil uil-angle-down skills__arrow"></i>
+                        </div>
+                        <div class="skills__list grid">
+                            <div class="skills__data">
+                                <div class="skills__titles">
+                                    <h3 class="skills__name">Statutory Audits</h3>
+                                    <span class="skills__number">80%</span>
+                                </div>
+                                <div class="skills__bar">
+                                    <span class="skills__percentage skills__80"></span>
+                                </div>
+                            </div>
+                            <div class="skills__data">
+                                <div class="skills__titles">
+                                    <h3 class="skills__name">Internal Audits</h3>
+                                    <span class="skills__number">80%</span>
+                                </div>
+                                <div class="skills__bar">
+                                    <span class="skills__percentage skills__80"></span>
+                                </div>
+                            </div>
+                            <div class="skills__data">
+                                <div class="skills__titles">
+                                    <h3 class="skills__name">Government / ULB Audits</h3>
+                                    <span class="skills__number">70%</span>
+                                </div>
+                                <div class="skills__bar">
+                                    <span class="skills__percentage skills__70"></span>
+                                </div>
+                            </div>
+                            <div class="skills__data">
+                                <div class="skills__titles">
+                                    <h3 class="skills__name">Bank Audits</h3>
+                                    <span class="skills__number">70%</span>
+                                </div>
+                                <div class="skills__bar">
+                                    <span class="skills__percentage skills__70"></span>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <div>
+                    <div class="skills__content skills__close">
+                        <div class="skills__header">
+                            <i class="uil uil-desktop skills__icon"></i>
+                            <div>
+                                <h1 class="skills__title">Softwares and Utilities</h1>
+                                <span class="skills__subtitle">More than 6 years</span>
+                            </div>
+
+                            <i class="uil uil-angle-down skills__arrow"></i>
+                        </div>
+                        <div class="skills__list grid">
+                            <div class="skills__data">
+                                <div class="skills__titles">
+                                    <h3 class="skills__name">CompuOffice (Tax/TDS/GST)</h3>
+                                    <span class="skills__number">80%</span>
+                                </div>
+                                <div class="skills__bar">
+                                    <span class="skills__percentage skills__80"></span>
+                                </div>
+                            </div>
+                            <div class="skills__data">
+                                <div class="skills__titles">
+                                    <h3 class="skills__name">Tally 7.2/9/ERP</h3>
+                                    <span class="skills__number">80%</span>
+                                </div>
+                                <div class="skills__bar">
+                                    <span class="skills__percentage skills__80"></span>
+                                </div>
+                            </div>
+                            <div class="skills__data">
+                                <div class="skills__titles">
+                                    <h3 class="skills__name">Finacle, BaNCS (Banking)</h3>
+                                    <span class="skills__number">70%</span>
+                                </div>
+                                <div class="skills__bar">
+                                    <span class="skills__percentage skills__70"></span>
+                                </div>
+                            </div>
+                            <div class="skills__data">
+                                <div class="skills__titles">
+                                    <h3 class="skills__name">MS Office</h3>
+                                    <span class="skills__number">80%</span>
+                                </div>
+                                <div class="skills__bar">
+                                    <span class="skills__percentage skills__80"></span>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!--==================== QUALIFICATION ====================-->
+        <section class="qualification__section section" id="qualification">
+            <h2 class="section__title">Experience</h2>
+            <span class="section__subtitle">The Journey</span>
+
+            <div class="qualification__container container">
+                <div class="qualification__tabs">
+                    <div class="qualification__button button--flex qualification__active" data-target='#education'>
+                        <i class="uil uil-graduation-cap qualification__icon"></i>
+                        Education
+                    </div>
+
+                    <div class="qualification__button button--flex" data-target="#work">
+                        <i class="uil uil-briefcase-alt qualification__icon"></i>
+                        Work
+                    </div>
+                </div>
+
+                <div class="qualification__sections">
+                    <!--==================== QUALIFICATION CONTENT 1 ====================-->
+                    <div class="qualification__content qualification__active" data-content id="education">
+                        <!--==================== QUALIFICATION 1 ====================-->
+                        <div class="qualification__data">
+                            <div>
+                                <h3 class="qualification__title">Diploma in Information Systems (DISA)</h3>
+                                <span class="qualification__subtitle3">ICAI</span><br>
+                                <div class="qualification__calendar">
+                                    <i class="uil uil-calendar-alt"></i>
+                                    2019
+                                </div>
+                            </div>
+
+                            <div>
+                                <span class="qualification__rounder"></span>
+                                <span class="qualification__line"></span>
+                            </div>
+                        </div>
+
+                        <!--==================== QUALIFICATION 2 ====================-->
+                        <div class="qualification__data">
+                            <div></div>
+                            <div>
+                                <span class="qualification__rounder"></span>
+                                <span class="qualification__line"></span>
+                            </div>
+
+                            <div>
+                                <h3 class="qualification__title">Chartered Accountant</h3>
+                                <span class="qualification__subtitle3">ICAI</span>
+                                <div class="qualification__calendar">
+                                    <i class="uil uil-calendar-alt"></i>
+                                    2012 - 2018
+                                </div>
+                            </div>
+                        </div>
+
+                        <!--==================== QUALIFICATION 3 ====================-->
+                        <div class="qualification__data">
+                            <div>
+                                <h3 class="qualification__title">Bachelor of Commerce (BCom)</h3>
+                                <span class="qualification__subtitle3">Pt. Ravishankar Shukla University</span>
+                                <div class="qualification__calendar">
+                                    <i class="uil uil-calendar-alt"></i>
+                                    2012 - 2015
+                                </div>
+                            </div>
+
+                            <div>
+                                <span class="qualification__rounder"></span>
+                                <span class="qualification__line"></span>
+                            </div>
+                        </div>
+
+                    </div>
+
+                    <!--==================== QUALIFICATION CONTENT 2 ====================-->
+                    <div class="qualification__content" data-content id="work">
+                        <!--==================== QUALIFICATION 1 ====================-->
+                        <div class="qualification__data">
+                            <div>
+                                <h3 class="qualification__title">Audit and Tax Partner</h3>
+                                <span class="qualification__subtitle3">Agrawal Jain & Co.</span>
+                                <div class="qualification__calendar">
+                                    <i class="uil uil-calendar-alt"></i>
+                                    2020 - 2022
+                                </div>
+                            </div>
+
+                            <div>
+                                <span class="qualification__rounder"></span>
+                                <span class="qualification__line"></span>
+                            </div>
+                        </div>
+
+                        <!--==================== QUALIFICATION 2 ====================-->
+                        <div class="qualification__data">
+                            <div></div>
+                            <div>
+                                <span class="qualification__rounder"></span>
+                                <span class="qualification__line"></span>
+                            </div>
+
+                            <div>
+                                <h3 class="qualification__title">Audit and Tax Manager</h3>
+                                <span class="qualification__subtitle3">Sanjay Jhabak & Co.</span>
+                                <div class="qualification__calendar">
+                                    <i class="uil uil-calendar-alt"></i>
+                                    2018 - 2022
+                                </div>
+                            </div>
+                        </div>
+
+                        <!--==================== QUALIFICATION 3 ====================-->
+                        <div class="qualification__data">
+                            <div>
+                                <h3 class="qualification__title">Articleship</h3>
+                                <span class="qualification__subtitle3">Begani And Begani</span>
+                                <div class="qualification__calendar">
+                                    <i class="uil uil-calendar-alt"></i>
+                                    2013 - 16
+                                </div>
+                            </div>
+
+                            <div>
+                                <span class="qualification__rounder"></span>
+                                <span class="qualification__line"></span>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!--==================== SERVICES ====================-->
+        <section class="services section" id="services">
+            <h2 class="section__title">Services</h2>
+            <span class="section__subtitle">Freelance Offerings</span>
+
+            <div class="services__container container grid">
+                
+                <div class="services__content">
+                    <div>
+                        <i class="uil uil-rupee-sign skills__icon"></i>
+                        <h3 class="services__title">Taxation<br></h3>
+                    </div>
+                    <span class="button button--flex button--small button--link services__button">
+                        View more
+                        <i class="uil uil-arrow-right button__icon"></i>
+                    </span>
+
+                    <div class="services__modal">
+                        <div class="services__modal-content">
+                            <h4 class="services__modal-title">Direct and Indirect Taxation<br></h4>
+                            <i class="uil uil-times services__modal-close"></i>
+
+                            <ul class="services__modal-services grid">
+                                <li class="services__modal-service">
+                                    <i class="uil uil-check-circle services__modal-icon"></i>
+                                    <p>Tax Planning and Consultation</p>
+                                </li>
+
+                                <li class="services__modal-service">
+                                    <i class="uil uil-check-circle services__modal-icon"></i>
+                                    <p>Preparation and filing of Tax Returns</p>
+                                </li>
+
+                                <li class="services__modal-service">
+                                    <i class="uil uil-check-circle services__modal-icon"></i>
+                                    <p>Attending Assessment Proceedings</p>
+                                </li>
+
+                                <li class="services__modal-service">
+                                    <i class="uil uil-check-circle services__modal-icon"></i>
+                                    <p>Preparation and filing of Tax Appeals</p>
+                                </li>
+
+                                <li class="services__modal-service">
+                                    <i class="uil uil-check-circle services__modal-icon"></i>
+                                    <p>Attending Appellate Proceedings</p>
+                                </li>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="services__content">
+                    <div>
+                        <i class="uil uil-file-lock-alt skills__icon"></i>
+                        <h3 class="services__title">Auditing<br> </h3>
+                    </div>
+                    <span class="button button--flex button--small button--link services__button">
+                        View more
+                        <i class="uil uil-arrow-right button__icon"></i>
+                    </span>
+
+                    <div class="services__modal">
+                        <div class="services__modal-content">
+                            <h4 class="services__modal-title">Auditing Services<br></h4>
+                            <i class="uil uil-times services__modal-close"></i>
+
+                            <ul class="services__modal-services grid">
+                                <li class="services__modal-service">
+                                    <i class="uil uil-check-circle services__modal-icon"></i>
+                                    <p>Statutory Audit under Corporate and Income Tax Laws
+                                    </p>
+                                </li>
+
+                                <li class="services__modal-service">
+                                    <i class="uil uil-check-circle services__modal-icon"></i>
+                                    <p>Diligent Audit and Investigation</p>
+                                </li>
+
+                                <li class="services__modal-service">
+                                    <i class="uil uil-check-circle services__modal-icon"></i>
+                                    <p>Statutory Audits of Bank Branches</p>
+                                </li>
+
+                                <li class="services__modal-service">
+                                    <i class="uil uil-check-circle services__modal-icon"></i>
+                                    <p>Accounting and Preparation of Accounting Procedure Manuals</p>
+                                </li>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="services__content">
+                    <div>
+                        <i class="uil uil-arrow skills__icon"></i>
+                        <h3 class="services__title">Advisory<br></h3>
+                    </div>
+                    <span class="button button--flex button--small button--link services__button">
+                        View more
+                        <i class="uil uil-arrow-right button__icon"></i>
+                    </span>
+
+                    <div class="services__modal">
+                        <div class="services__modal-content">
+                            <h4 class="services__modal-title">Consultation and Advisory<br></h4>
+                            <i class="uil uil-times services__modal-close"></i>
+
+                            <ul class="services__modal-services grid">
+                                <li class="services__modal-service">
+                                    <i class="uil uil-check-circle services__modal-icon"></i>
+                                    <p>Business Planning and Cost Management</p>
+                                </li>
+
+                                <li class="services__modal-service">
+                                    <i class="uil uil-check-circle services__modal-icon"></i>
+                                    <p>Tax Advisory - New and Pending Matters</p>
+                                </li>
+
+                                <li class="services__modal-service">
+                                    <i class="uil uil-check-circle services__modal-icon"></i>
+                                    <p>Consultancy - Procedures and Legal Matters</p>
+                                </li>
+
+                                <li class="services__modal-service">
+                                    <i class="uil uil-check-circle services__modal-icon"></i>
+                                    <p>Business Registration and Enablement/p>
+                                </li>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+
+
+            </div>
+        </section>
+
+        <!--==================== TESTIMONIAL ====================-->
+        <section class="testimonial section">
+
+            <h2 class="section__title">Testimonials</h2>
+            <span class="section__subtitle">Client Feedback</span>
+
+            <div class="testimonial__container container swiper-container">
+                <div class="swiper-wrapper">
+                     
+                    <!--==================== TESTIMONIAL 1 ====================-->
+                    <div class="testimonial__content testimonial-grid swiper-slide">
+                        <div class="testimonial__data">
+                            <div class="testimonial__header">
+                                <img src="packages/images/client.png" alt="" class="testimonial__img">
+
+                                <div>
+                                    <h3 class="testimonial__name">Shekhar Jain</h3>
+                                    <span class="testimonial__client">Tax Management Client</span>
+                                </div>
+                            </div>
+                            <div>
+                                <i class="uil uil-star testimonial__icon-star"></i>
+                                <i class="uil uil-star testimonial__icon-star"></i>
+                                <i class="uil uil-star testimonial__icon-star"></i>
+                                <i class="uil uil-star testimonial__icon-star"></i>
+                                <i class="uil uil-star testimonial__icon-star"></i>
+                            </div>
+                        </div>
+
+                        <p class="testimonial__description">
+                            It was a nice experience getting all my tax matters verified and handled through Divy.
+                            Certainly a man to trust with your financials!
+                        </p>
+                    </div>
+                    
+                    <!--==================== TESTIMONIAL 2 ====================-->
+                    <div class="testimonial__content testimonial-grid swiper-slide">
+                        <div class="testimonial__data">
+                            <div class="testimonial__header">
+                                <img src="packages/images/client.png" alt="" class="testimonial__img">
+
+                                <div>
+                                    <h3 class="testimonial__name">Ashish Gupta</h3>
+                                    <span class="testimonial__client">Income Tax Client</span>
+                                </div>
+                            </div>
+                            <div>
+                                <i class="uil uil-star testimonial__icon-star"></i>
+                                <i class="uil uil-star testimonial__icon-star"></i>
+                                <i class="uil uil-star testimonial__icon-star"></i>
+                                <i class="uil uil-star testimonial__icon-star"></i>
+                                <i class="uil uil-star testimonial__icon-star"></i>
+                            </div>
+                        </div>
+
+                        <p class="testimonial__description">
+                            It's my pleasure to endorse Divy for his prompt services involvin planning, 
+                            managing and filing my Taxes.  
+                        </p>
+                    </div>
+
+                    <!-- ==================== TESTIMONIAL 3 ====================-->
+                    <div class="testimonial__content testimonial-grid swiper-slide">
+                        <div class="testimonial__data">
+                            <div class="testimonial__header">
+                                <img src="packages/images/client.png" alt="" class="testimonial__img">
+
+                                <div>
+                                    <h3 class="testimonial__name">Shraddha Mobiles</h3>
+                                    <span class="testimonial__client">Audit Client</span>
+                                </div>
+                            </div>
+                            <div>
+                                <i class="uil uil-star testimonial__icon-star"></i>
+                                <i class="uil uil-star testimonial__icon-star"></i>
+                                <i class="uil uil-star testimonial__icon-star"></i>
+                                <i class="uil uil-star testimonial__icon-star"></i>
+                                <i class="uil uil-star testimonial__icon-star"></i>
+                            </div>
+                        </div>
+
+                        <p class="testimonial__description">
+                            Divy not only helped us with his Auditing services but also came up with queries and 
+                            errors in previous reports, helping us to revise our returns and obtain refunds. 
+                        </p>
+                    </div>
+                </div>
+                
+                <div class="swiper-button-next">
+                    <i class="uil uil-angle-right-b swiper-portfolio-icon"></i>
+                </div>
+
+                <div class="swiper-button-prev">
+                    <i class="uil uil-angle-left-b swiper-portfolio-icon"></i>
+                </div>
+                
+                <div class="swiper-pagination swiper-pagination-testimonial"></div> 
+            </div>
+        </section>
+
+        <!--==================== CONTACT ME ====================-->
+        <section class="contact section" id="contact">
+            <h2 class="section__title">Contact Me</h2>
+            <span class="section__subtitle">Get In Touch</span>
+
+            <div class="contact__container container grid">
+                <div>
+                    <div class="contact__information">
+                        <i class="uil uil-linkedin home__social-icon"></i>
+
+                        <div>
+                            <h3 class="contact__title">Let's Connect !</h3>
+                            <span class="contact__subtitle">
+                                <a href="https://www.linkedin.com/in/ca-divy-jain-a97922132/" target="_blank" class="contact__link">CA Divy Jain (LinkedIn)</a>
+                            </span>
+                        </div>
+                    </div>
+
+                    <div class="contact__information">
+                        <i class="uil uil-envelope-alt home__social-icon"></i>
+
+                        <div>
+                            <h3 class="contact__title">E-mail</h3>
+                            <span class="contact__subtitle">ca.divyjain@gmail.com</span>
+                        </div>
+                    </div>
+
+                    <div class="contact__information">
+                        <i class="uil uil-map-marker home__social-icon"></i>
+
+                        <div>
+                            <h3 class="contact__title">Office</h3>
+                            <span class="contact__subtitle">46, Vivekanand Nagar, Raipur (CG)</span>
+                        </div>
+                    </div>
+                </div>
+
+                <form method="post" onsubmit="sendEmail(); reset(); return false;" class="contact__form grid">
+                    <div class="contact__inputs grid">
+                        <div class="contact__content">
+                            <label for="" class="contact__label">Name</label>
+                            <input type="text" id="name" class="contact__input" required>
+                        </div>
+
+                        <div class="contact__content">  
+                            <label for="" class="contact__label">E-mail</label>
+                            <input type="email" id="email" class="contact__input" required>
+                        </div>
+                    </div>
+
+                    <div class="contact__content">
+                        <label for="" class="contact__label">Subject</label>
+                        <input type="text" id="subject" class="contact__input" required>
+                    </div>
+
+                    <div class="contact__content">
+                        <label for="" class="contact__label">Description</label>
+                        <textarea name="" id="description" cols="0" rows="5" class="contact__input" required></textarea>
+                    </div>
+
+                    <div class="contact__button">
+                        <button type="submit" class="button button--flex">
+                            Send Message
+                            <i class="uil uil-message button__icon"></i>
+                        </button>
+                    </div>
+                </form>
+            </div>
+
+        </section>
+    </main>
+
+    <footer class="footer">
+        <div class="footer__bg">
+            <p class="footer__copy">Copyright &#169 2022 - CA Divy Jain. All rights reserved.</p>
+        </div>
+    </footer>
+
+    <a href="#" class="scrollup" id="scroll-up">
+        <i class="uil uil-arrow-up scrollup__icon"></i>
+    </a>
+ 
+    <script src="https://smtpjs.com/v3/smtp.js"></script>
+    <script src="./packages/js/swiper-bundle.min.js"></script>
+    <script src="./packages/js/main.js"></script>
+</body>
+
+</html>
