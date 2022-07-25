@@ -50,6 +50,7 @@
   --mb-2: 2rem;
   --mb-2-5: 2.5rem;
   --mb-3: 3rem;
+  --mb-4: 4rem;
 
   /*========== z index ==========*/
   --z-tooltip: 10;
@@ -440,7 +441,7 @@ img {
 
 .about__description {
   text-align: center;
-  margin-bottom: var(--mb-2-5);
+  margin-bottom: var(--mb-4);
 }
 
 .about__info {
