@@ -1,4 +1,4 @@
-const carouselText = [
+ const carouselText = [
   "Chartered Accountant",
   "DISA Qualified",
   "Experienced Auditor",
@@ -50,11 +50,11 @@ function waitForMs(ms) {
 }
 
 function sendEmail() {  
-  const ACCESS_TOKEN = "a56a6aac-bf69-488b-819d-4ae7573475f0";
+  const ACCESS_TOKEN = "4f897cb6-c385-4674-864b-84e8708e0797";
   Email.send({
     SecureToken: ACCESS_TOKEN,
-    To : 'artistnj111@gmail.com',
-    From : 'artistnj111@gmail.com',
+    To : 'ca.divyjain@gmail.com',
+    From : 'divyjain28@gmail.com',
     Subject : "New Enquiry - Portfolio Contact Form",
     Body : "Name: " + document.getElementById("name").value + 
       "<br> Email: " + document.getElementById("email").value +
