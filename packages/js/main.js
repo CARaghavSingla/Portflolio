@@ -50,20 +50,71 @@ function waitForMs(ms) {
 }
 
 function sendEmail() {  
-  const ACCESS_TOKEN = "4f897cb6-c385-4674-864b-84e8708e0797";
-  Email.send({
-    SecureToken: ACCESS_TOKEN,
-    To : 'ca.divyjain@gmail.com',
-    From : 'divyjain28@gmail.com',
-    Subject : "New Enquiry - Portfolio Contact Form",
-    Body : "Name: " + document.getElementById("name").value + 
-      "<br> Email: " + document.getElementById("email").value +
-      "<br> Subject: " + document.getElementById("subject").value +
-      "<br> Message: " + document.getElementById("description").value + 
-      "<br><br><br>"   
-  }).then(
-  message => console.log(message)
-  );
+  // Get form data
+  const name = document.getElementById("name").value;
+  const email = document.getElementById("email").value;
+  const subject = document.getElementById("subject").value;
+  const message = document.getElementById("description").value;
+  
+  // Validate form data
+  if (!name || !email || !subject || !message) {
+    alert("Please fill in all fields!");
+    return false;
+  }
+  
+  // Show loading state
+  const submitButton = document.querySelector('.contact__button button');
+  const originalText = submitButton.innerHTML;
+  submitButton.innerHTML = 'Sending...';
+  submitButton.disabled = true;
+  
+  // Prepare email data
+  const emailData = {
+    name: name,
+    email: email,
+    subject: subject,
+    message: message
+  };
+  
+  // Determine API URL based on deployment
+  const isLocalhost = window.location.hostname === 'localhost' || window.location.hostname === '127.0.0.1';
+  const apiUrl = isLocalhost 
+    ? 'http://localhost:3000/api/send-email' 
+    : '/api/send-email';
+  
+  // Send email using Vercel API
+  fetch(apiUrl, {
+    method: 'POST',
+    headers: {
+      'Content-Type': 'application/json',
+    },
+    body: JSON.stringify(emailData)
+  })
+  .then(response => response.json())
+  .then(data => {
+    if (data.success) {
+      alert("Thank you! Your message has been sent successfully.");
+      // Reset form
+      document.getElementById("name").value = "";
+      document.getElementById("email").value = "";
+      document.getElementById("subject").value = "";
+      document.getElementById("description").value = "";
+    } else {
+      alert("Sorry, there was an error sending your message. Please contact directly via email: singlaraghav200@gmail.com");
+      console.error("Email error:", data.error);
+    }
+  })
+  .catch(error => {
+    alert("Sorry, there was an error sending your message. Please contact directly via email: singlaraghav200@gmail.com");
+    console.error("Email error:", error);
+  })
+  .finally(() => {
+    // Reset button state
+    submitButton.innerHTML = originalText;
+    submitButton.disabled = false;
+  });
+  
+  return false;
 }
 
 const navMenu = document.getElementById("nav-menu"),
