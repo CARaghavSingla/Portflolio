@@ -76,43 +76,37 @@ function sendEmail() {
     message: message
   };
   
-  // Determine API URL based on deployment
-  const isLocalhost = window.location.hostname === 'localhost' || window.location.hostname === '127.0.0.1';
-  const apiUrl = isLocalhost 
-    ? 'http://localhost:3000/api/send-email' 
-    : '/api/send-email';
+  // Initialize EmailJS
+  emailjs.init("2SANbbxbOTQyHEE4V"); // Replace with your EmailJS public key
   
-  // Send email using Vercel API
-  fetch(apiUrl, {
-    method: 'POST',
-    headers: {
-      'Content-Type': 'application/json',
-    },
-    body: JSON.stringify(emailData)
-  })
-  .then(response => response.json())
-  .then(data => {
-    if (data.success) {
+  // EmailJS configuration
+  const templateParams = {
+    from_name: name,
+    from_email: email,
+    subject: subject,
+    message: message,
+    to_email: 'singlaraghav200@gmail.com'
+  };
+  
+  // Send email using EmailJS
+  emailjs.send('service_yohbyui', 'template_ps5gy58', templateParams)
+    .then(function(response) {
       alert("Thank you! Your message has been sent successfully.");
       // Reset form
       document.getElementById("name").value = "";
       document.getElementById("email").value = "";
       document.getElementById("subject").value = "";
       document.getElementById("description").value = "";
-    } else {
+    })
+    .catch(function(error) {
       alert("Sorry, there was an error sending your message. Please contact directly via email: singlaraghav200@gmail.com");
-      console.error("Email error:", data.error);
-    }
-  })
-  .catch(error => {
-    alert("Sorry, there was an error sending your message. Please contact directly via email: singlaraghav200@gmail.com");
-    console.error("Email error:", error);
-  })
-  .finally(() => {
-    // Reset button state
-    submitButton.innerHTML = originalText;
-    submitButton.disabled = false;
-  });
+      console.error("Email error:", error);
+    })
+    .finally(function() {
+      // Reset button state
+      submitButton.innerHTML = originalText;
+      submitButton.disabled = false;
+    });
   
   return false;
 }
