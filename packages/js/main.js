@@ -256,6 +256,7 @@ const getCurrentTheme = () =>
 const getCurrentIcon = () =>
   themeButton.classList.contains(iconTheme) ? "uil-moon" : "uil-sun";
 
+// Set dark mode as default if no theme is saved
 if (selectedTheme) {
   document.body.classList[selectedTheme === "dark" ? "add" : "remove"](
     darkTheme
@@ -263,6 +264,12 @@ if (selectedTheme) {
   themeButton.classList[selectedIcon === "uil-moon" ? "add" : "remove"](
     iconTheme
   );
+} else {
+  // Default to dark mode if no theme is saved
+  document.body.classList.add(darkTheme);
+  themeButton.classList.add(iconTheme);
+  localStorage.setItem("selected-theme", "dark");
+  localStorage.setItem("selected-icon", "uil-moon");
 }
 
 themeButton.addEventListener("click", () => {
