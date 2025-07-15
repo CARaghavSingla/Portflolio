@@ -1,8 +1,6 @@
  const carouselText = [
   "Chartered Accountant",
-  "DISA Qualified",
-  "Experienced Auditor",
-  "Tax Consultant"
+  "Experienced Auditor"
 ]
 
 const intro = document.getElementById("introduction")
